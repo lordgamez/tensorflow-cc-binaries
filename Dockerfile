@@ -17,6 +17,7 @@ RUN cp /usr/local/lib/libprotobuf-lite.so.20.0.1 /tensorflow_binaries/libs && \
     cp /usr/local/lib/libprotobuf.a /tensorflow_binaries/libs && \
     cp /usr/local/lib/libtensorflow_cc.so.2 /tensorflow_binaries/libs && \
     cd /tensorflow_binaries/libs && \
+    ln -s libtensorflow_cc.so.2 libtensorflow_cc.so && \
     ln -s libprotobuf-lite.so.20.0.1 libprotobuf-lite.so.20 && \
     ln -s libprotobuf-lite.so.20 libprotobuf-lite.so && \
     ln -s libprotobuf.so.20.0.1 libprotobuf.so.20 && \
